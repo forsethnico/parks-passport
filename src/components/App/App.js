@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import { fetchAllParks } from '../../apiCalls'
+import './App.css'
 import Form from '../Form/Form'
-
+import Results from '../Results/Results'
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
       parks: [],
+      filteredParks: [],
       error: ''
       }
     }
@@ -17,6 +19,10 @@ class App extends Component {
       .then(parks => this.setState({parks: parks.data}))
       .catch(error => this.setState({...this.state, error: error.message}))
     }
+
+    // filterParks = query => {
+    //   const findCode = 
+    // }
 
     render() {
       return (
