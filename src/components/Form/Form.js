@@ -1,39 +1,26 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
+import { stateNameToAbbreviation } from '../../utilities/states'
 import './Form.css'
 
-class Form extends Component {
-    constructor() {
-        super();
-        this.state = {
-            query: ''
-        }
+function Form(props) {
+    const [query, setQuery] = useState('')
+
+    const clearInputs = () => {
+        setQuery('')
     }
 
-    handleChange = event => {
-        this.setState({query: event.target.value})
-    }
-
-    clearInputs = () => {
-        this.setState({query: ''})
-    }
-
-    //Needs help
-    submitSearch = event => {
+    const submitSearch = event => {
         event.preventDefault()
-        this.props.filterParks({query: this.state.query})
-        this.clearInputs()
+        props.filterParks(query)
+        clearInputs();
     }
 
-    render() {
-        return (
-            <form>
-                <input type="text" placeholder="Search by park name or state" name='query' value={this.state.query} onChange={event => this.handleChange(event)}/>
-                <button onClick={event => this.submitSearch(event)}>Search</button>
-            </form>
-        )
-    }
-
-
+    return (
+        <form>
+            <input type="text" placeholder="Search by park name or state" name='query' value={query} onChange={event => setQuery(event.target.value)}/>
+            <button onClick={event => submitSearch(event)}>Search</button>
+        </form>
+    )
 }
 
 export default Form;

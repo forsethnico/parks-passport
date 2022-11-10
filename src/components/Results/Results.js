@@ -21,7 +21,7 @@ const Results = ({filteredParks}) => {
     )
 }
 
-Results.PropTypes = {
+Results.propTypes = {
     filteredParks: PropTypes.array.isRequired
  }
 
