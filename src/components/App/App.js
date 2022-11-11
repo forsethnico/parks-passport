@@ -62,7 +62,7 @@ function App() {
             <Route exact path="/">
               <div className="main-page">
                   <Form filterParksByQuery = {filterParksByQuery}/>
-                  <Results filteredParks = {filteredParks}/>
+                  {filteredParks.length > 0 && <Results filteredParks = {filteredParks}/>}
               </div>
             </Route>
             <Route exact path="/passport" render={() => (
