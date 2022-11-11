@@ -1,11 +1,13 @@
-/* .park-card {
-
+.park-card {
+    width: 7rem;
+    height: 6rem;
 }
 
 .park-image {
-
+    width: 15rem;
+    height: 10rem;
 }
 
-.park-name {
+/* .park-name {
 
 } */

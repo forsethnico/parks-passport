@@ -11,7 +11,7 @@ function Form(props) {
 
     const submitSearch = event => {
         event.preventDefault()
-        props.filterParks(query)
+        props.filterParksByQuery(query)
         clearInputs();
     }
 

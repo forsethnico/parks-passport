@@ -13,23 +13,25 @@ function App() {
     const [parks, setParks] = useState([])
     const [filteredParks, setFiltered] = useState([])
     const [visited, setVisited] = useState({})
-    const [isLoaded, setIsLoaded] = useState(false)
+    // const [isLoaded, setIsLoaded] = useState(false)
 
     useEffect(() => {
+      console.log('test')
       fetchAllParks() 
       .then(parks => {
-          setIsLoaded(true)
+          // setIsLoaded(true)
           console.log(parks.data)
           setParks(parks.data)
         })
       .catch(error => {
-          setIsLoaded(true)
+          console.log(error)
+          // setIsLoaded(true)
           setError(error)
         }
       )
     }, [])
 
-    const filterParkByQuery = (query) => {
+    const filterParksByQuery = (query) => {
       const foundParks = parks.filter(park => {
         const lowerCaseQ = query.toLowerCase()
         return park.fullName.toLowerCase().includes(lowerCaseQ) || park.states.toLowerCase().includes(lowerCaseQ)
@@ -37,33 +39,46 @@ function App() {
       setFiltered(foundParks)
     }
 
+    const findSelectedPark = (parkCode) => {
+      return parks.find(park => park.parkCode === parkCode)
+    }
+
+    const addVisited = (id, date) => {
+      setVisited({...visited, [id]:date})
+    }
+
       return (
         <main className = "App">
           <nav>
             <NavLink to ="/" style={{textDecoration: "none"}}>
               <div className = "logo-title">
-                <img src = {forest} className="logo" alt="picnic table logo"/>
+                {/* <img src = {forest} className="logo" alt="picnic table logo"/> */}
                 <h1 className = "app-title">National Parks Passport</h1>
               </div>
             </NavLink>
           </nav>
+          {!error && (
           <Switch>
-            <Route exact path="/passport" render={()=> {
+            <Route exact path="/">
+              <div className="main-page">
+                  <Form filterParksByQuery = {filterParksByQuery}/>
+                  <Results filteredParks = {filteredParks}/>
+              </div>
+            </Route>
+            <Route exact path="/passport" render={() => (
               <Passport visited={visited} parks={parks}/>
-            }}
+            )}
             />
-            <Route exact path= "/parks/:park"
+            <Route exact path= "/parks/:parkCode"
             render={({match}) => {
               return (
-                <ParkInfo parks={parks} name= {match.params.fullName}/>
+                <ParkInfo selectedPark= {findSelectedPark(match.params.parkCode)} addVisited={addVisited}/>
               )
             }}
             />
              <Route render={() => <Redirect to={{ pathname: "/" }} />} />
           </Switch>
-
-          <Form filterParks = {filterParkByQuery}/>
-          <Results filteredParks = {filteredParks}/>
+          )}
           {error && <h2>{error}</h2>}
           {!error && !parks.length && 
           <h2>Loading...</h2>

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Passport.css";
-import Stamp from "../../Stamp/Stamp";
+import Stamp from "../Stamp/Stamp";
+import PropTypes from 'prop-types'
 
 function Passport({ visited, parks }) {
   const visitedIDs = Object.keys(visited);
@@ -16,5 +17,10 @@ function Passport({ visited, parks }) {
   });
   return <section className="passport-stamp-container">{parkStamps}</section>;
 }
+
+Passport.propTypes = {
+    parks: PropTypes.array.isRequired,
+    visited: PropTypes.object.isRequired
+ }
 
 export default Passport;

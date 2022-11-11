@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Stamp.css";
 import stamp from "../../assets/post-stamp.png";
+import PropTypes from 'prop-types';
 
 const Stamp = ({ url, name, date }) => {
   return (
@@ -12,5 +13,11 @@ const Stamp = ({ url, name, date }) => {
     </section>
   );
 };
+
+Stamp.propTypes = {
+    url: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired
+ }
 
 export default Stamp;

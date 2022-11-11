@@ -9,6 +9,7 @@ const Results = ({filteredParks}) => {
             <Card
             name= {park.name}
             key= {park.id}
+            parkCode={park.parkCode}
             url={park.images[0].url}
             />
         )
