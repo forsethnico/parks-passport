@@ -1,28 +1,58 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import "./Stamp.css";
+import {fetchSpecificPark} from '../../utilities/apiCalls'
 import {Link} from 'react-router-dom'
-import stamp from "../../assets/post-stamp.png";
+import postStamp from "../../assets/post-stamp.png";
+import stamp from "../../assets/stamp.png";
 import PropTypes from 'prop-types';
 
-const Stamp = ({ url, name, date, parkCode }) => {
+const Stamp = ({ date, parkCode }) => {
+  const [parkInfo, setParkInfo] = useState({})
+  const [loaded, setLoaded] = useState(false);
+  const [error, setError] = useState("")
+  useEffect(() => {
+    fetchSpecificPark(parkCode)
+    .then(parkInfo => {
+      setParkInfo(parkInfo.data[0])
+      setLoaded(true)
+    })
+  .catch(error => {
+      setError(error)
+    }
+  )
+  }, []) 
+  if(loaded) {
   return (
    <Link to={`/parks/${parkCode}`}> 
       <section className="passport-stamp">
-        <img src={url} alt="park scenery" className="park-stamp-image" />
-        <img src={stamp} alt="stamp border" className="overlay" />
+        <img src={parkInfo.images[0].url} alt="park scenery" className="park-stamp-image" />
+        <img src={postStamp} alt="stamp border" className="overlay" />
         <div className="stamp-info">
-          <h4 className="stamp-title">{name}</h4>
+          <h4 className="stamp-title">{parkInfo.name}</h4>
           <h4 className="stamp-date">{date}</h4>
         </div>
       </section>
     </Link>
   );
-};
+} else {
+  return (
+    <Link to={`/parks/${parkCode}`}> 
+       <section className="passport-stamp">
+         <img src={stamp} alt="loading stamp" className="park-stamp-image" />
+         <img src={postStamp} alt="stamp border" className="overlay" />
+         <div className="stamp-info">
+           <h4 className="stamp-title">Loading...</h4>
+           <h4 className="stamp-date">Loading...</h4>
+         </div>
+       </section>
+     </Link>
+   );
+}
+
+}
 
 Stamp.propTypes = {
-    url: PropTypes.string.isRequired,
     date: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
     parkCode: PropTypes.string.isRequired
  }
 
