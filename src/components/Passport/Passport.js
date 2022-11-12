@@ -3,17 +3,15 @@ import "./Passport.css";
 import Stamp from "../Stamp/Stamp";
 import PropTypes from 'prop-types'
 
-function Passport({ visited, parks }) {
-  const visitedIDs = Object.keys(visited);
-  const visitedParks = parks.filter((park) => visitedIDs.includes(park.id));
-  const parkStamps = visitedParks.map((park) => {
+function Passport({ visited }) {
+  const visitedParkCodes = Object.keys(visited);
+
+  const parkStamps = visitedParkCodes.map((parkCode) => {
     return (
       <Stamp
-        url={park.images[0].url}
-        name={park.fullName}
-        date={visited[park.id].toDateString()}
-        key={park.id}
-        parkCode = {park.parkCode}
+        date={visited[parkCode].toDateString()}
+        key={parkCode}
+        parkCode = {parkCode}
       />
     );
   });
@@ -25,7 +23,6 @@ function Passport({ visited, parks }) {
 )}
 
 Passport.propTypes = {
-    parks: PropTypes.array.isRequired,
     visited: PropTypes.object.isRequired
  }
 

@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 import './Results.css'
 import Card from '../Card/Card'
 
-const Results = ({filteredParks}) => {
-    const parkCards = filteredParks.map(park => {
+const Results = ({parks}) => {
+    const parkCards = parks.map(park => {
         return (
             <Card
             name= {park.name}
@@ -23,7 +23,7 @@ const Results = ({filteredParks}) => {
 }
 
 Results.propTypes = {
-    filteredParks: PropTypes.array.isRequired
+    parks: PropTypes.array.isRequired
  }
 
 export default Results

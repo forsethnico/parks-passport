@@ -1,63 +1,85 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./ParkInfo.css";
 import PropTypes from "prop-types";
 import stamp from "../../assets/stamp.png";
 import approved from "../../assets/approved.png"
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import {fetchSpecificPark} from '../../utilities/apiCalls'
 
-function ParkInfo({ selectedPark, addVisited, visited }) {
+function ParkInfo({ parkCode, addVisited, visited }) {
+  const [parkInfo, setParkInfo] = useState({})
+  const [loaded, setLoaded] = useState(false);
+  const [error, setError] = useState("")
   const [visitDate, setVisitDate] = useState(new Date());
-  const isVisited = Object.keys(visited).includes(selectedPark.id)
-  const parkAddress = selectedPark.addresses[0]
-  const parkActivities = selectedPark.activities.map(
-    (activity) => activity.name
-  );
-  if (selectedPark) {
-    return (
-      <section className="individual-park-container">
-        <section className="individual-park">
-          <img
-            src={selectedPark.images[0].url}
-            alt="large park scenery"
-            className="individual-park-image"
-          />
-          <h2 className="individual-park-name">{selectedPark.fullName}</h2>
-          <section className="park-info">
-            <p>Description: {selectedPark.description}</p>
-            <p>Address: {`${parkAddress.line1}, ${parkAddress.city}, ${parkAddress.stateCode}`}</p>
-            <p>Activities: {parkActivities.join(", ")}</p>
-          </section>
-          {isVisited &&
-            <section className="visited">
-              <img src={approved} alt="check mark" className="approval-check-image"/>
-              <h4>Passport stamped!</h4>
-            </section>
-          } 
-          {!isVisited &&
-          <section className="add-visited">
-            <label htmlFor="visited">Date Visited:</label>
-            <DatePicker
-              selected={visitDate}
-              name="visited"
-              onChange={(date) => setVisitDate(date)}
-            />
-            <button onClick={() => addVisited(selectedPark.id, visitDate)}>
-              Add to Passport
-              <img className="stamp" src={stamp} alt="stamp" />
-            </button>
-          </section>
-        }
-        </section>
-      </section>
+
+  useEffect(() => {
+    console.log('ParkInfo: ' + parkCode)
+    fetchSpecificPark(parkCode)
+    .then(parkInfo => {
+      console.log(parkInfo)
+      setParkInfo(parkInfo.data[0])
+      setLoaded(true)
+    })
+  .catch(error => {
+      console.log(error)
+      setError(error)
+    }
+  )
+  }, []) 
+  
+  if(loaded) {
+    const isVisited = Object.keys(visited).includes(parkCode)
+    const parkAddress = parkInfo.addresses[0]
+    const parkActivities = parkInfo.activities.map(
+      (activity) => activity.name
     );
+      return (
+        <section className="individual-park-container">
+          <section className="individual-park">
+            <img
+              src={parkInfo.images[0].url}
+              alt="large park scenery"
+              className="individual-park-image"
+            />
+            <h2 className="individual-park-name">{parkInfo.fullName}</h2>
+            <section className="park-info">
+              <p>Description: {parkInfo.description}</p>
+              <p>Address: {`${parkAddress.line1}, ${parkAddress.city}, ${parkAddress.stateCode}`}</p>
+              <p>Activities: {parkActivities.join(", ")}</p>
+            </section>
+            {isVisited &&
+              <section className="visited">
+                <img src={approved} alt="check mark" className="approval-check-image"/>
+                <h4>Passport stamped!</h4>
+              </section>
+            } 
+            {!isVisited &&
+            <section className="add-visited">
+              <label htmlFor="visited">Date Visited:</label>
+              <DatePicker
+                selected={visitDate}
+                name="visited"
+                onChange={(date) => setVisitDate(date)}
+              />
+              <button onClick={() => addVisited(parkCode, visitDate)}>
+                Add to Passport
+                <img className="stamp" src={stamp} alt="stamp" />
+              </button>
+            </section>
+          }
+          </section>
+        </section>
+      );
+  } else if (error) {
+    return <h2>{error}</h2>
   } else {
-    return <h2>No park info available!</h2>;
+    return <h2>Loading...</h2>;
   }
 }
 
 ParkInfo.propTypes = {
-  selectedPark: PropTypes.object.isRequired,
+  parkCode: PropTypes.string.isRequired,
   addVisited: PropTypes.func.isRequired,
   visited: PropTypes.object.isRequired
 };

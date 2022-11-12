@@ -1,92 +1,81 @@
-import React, { useEffect, useState } from 'react';
-import { fetchAllParks } from '../../utilities/apiCalls'
-import './App.css'
-import { NavLink, Route, Switch, Redirect } from 'react-router-dom';
-import Form from '../Form/Form'
-import Results from '../Results/Results'
-import ParkInfo from '../ParkInfo/ParkInfo';
-import Passport from '../Passport/Passport';
-import logo from '../../assets/header.png'
-import passport from '../../assets/PassParks.png'
+import React, { useState } from "react";
+import { fetchParkQuery } from "../../utilities/apiCalls";
+import "./App.css";
+import { NavLink, Route, Switch, Redirect } from "react-router-dom";
+import Form from "../Form/Form";
+import Results from "../Results/Results";
+import ParkInfo from "../ParkInfo/ParkInfo";
+import Passport from "../Passport/Passport";
+import logo from "../../assets/header.png";
+import passport from "../../assets/PassParks.png";
 
 function App() {
-    const [error, setError] = useState(null)
-    const [parks, setParks] = useState([])
-    const [filteredParks, setFiltered] = useState([])
-    const [visited, setVisited] = useState({})
-    // const [isLoaded, setIsLoaded] = useState(false)
+  const [error, setError] = useState(null);
+  const [parks, setParks] = useState([]);
+  const [visited, setVisited] = useState({});
+  const [isLoaded, setIsLoaded] = useState(false);
 
-    useEffect(() => {
-      console.log('test')
-      fetchAllParks() 
-      .then(parks => {
-          // setIsLoaded(true)
-          console.log(parks.data)
-          setParks(parks.data)
-        })
-      .catch(error => {
-          console.log(error)
-          // setIsLoaded(true)
-          setError(error)
-        }
-      )
-    }, [])
-
-    const filterParksByQuery = (query) => {
-      const foundParks = parks.filter(park => {
-        const lowerCaseQ = query.toLowerCase()
-        return park.fullName.toLowerCase().includes(lowerCaseQ) || park.states.toLowerCase().includes(lowerCaseQ)
+  const queryParks = (query) => {
+    fetchParkQuery(query)
+      .then((parks) => {
+        setIsLoaded(true);
+        console.log(parks.data);
+        setParks(parks.data);
       })
-      setFiltered(foundParks)
-    }
+      .catch((error) => {
+        console.log(error);
+        setError(error);
+      });
+  };
 
-    const findSelectedPark = (parkCode) => {
-      return parks.find(park => park.parkCode === parkCode)
+  const addVisited = (parkCode, date) => {
+    if(!Object.keys(visited).includes(parkCode)) {
+    setVisited({ ...visited, [parkCode]: date });
     }
+  }
 
-    const addVisited = (id, date) => {
-      setVisited({...visited, [id]:date})
-    }
-
-      return (
-        <main className = "App">
-          <nav>
-            <NavLink to ="/">
-              <img src = {logo} className="logo" alt="passport header"/>
-            </NavLink>
-            <NavLink to ="/passport">
-                <img src ={passport} className="passport-link" alt="passport"/>
-            </NavLink>
-          </nav>
-          {!error && (
-          <Switch>
-            <Route exact path="/">
-              <div className="main-page">
-                  <Form filterParksByQuery = {filterParksByQuery}/>
-                  {filteredParks.length > 0 && <Results filteredParks = {filteredParks}/>}
-              </div>
-            </Route>
-            <Route exact path="/passport" render={() => (
-              <Passport visited={visited} parks={parks}/>
-            )}
-            />
-            <Route exact path= "/parks/:parkCode"
-            render={({match}) => {
+  return (
+    <main className="App">
+      <nav>
+        <NavLink to="/">
+          <img src={logo} className="logo" alt="passport header" />
+        </NavLink>
+        <NavLink to="/passport">
+          <img src={passport} className="passport-link" alt="passport" />
+        </NavLink>
+      </nav>
+      {!error && (
+        <Switch>
+          <Route exact path="/">
+            <div className="main-page">
+              <Form queryParks={queryParks} />
+              {parks.length > 0 && <Results parks={parks} />}
+              {error && <h4>{error}</h4>}
+            </div>
+          </Route>
+          <Route
+            exact
+            path="/passport"
+            render={() => <Passport visited={visited} />}
+          />
+          <Route
+            exact
+            path="/parks/:parkCode"
+            render={({ match }) => {
               return (
-                <ParkInfo selectedPark= {findSelectedPark(match.params.parkCode)} addVisited={addVisited} visited={visited}/>
-              )
+                <ParkInfo
+                  parkCode={match.params.parkCode}
+                  addVisited={addVisited}
+                  visited={visited}
+                />
+              );
             }}
-            />
-             <Route render={() => <Redirect to={{ pathname: "/" }} />} />
-          </Switch>
-          )}
-          {error && <h2>{error}</h2>}
-          {!error && !parks.length && 
-          <h2>Loading...</h2>
-          }
-        </main>
-      )
-    }
-  
+          />
+          <Route render={() => <Redirect to={{ pathname: "/" }} />} />
+        </Switch>
+      )}
+    </main>
+  );
+}
 
 export default App;
