@@ -19,11 +19,9 @@ function App() {
     fetchParkQuery(query)
       .then((parks) => {
         setIsLoaded(true);
-        console.log(parks.data);
         setParks(parks.data);
       })
       .catch((error) => {
-        console.log(error);
         setError(error);
       });
   };

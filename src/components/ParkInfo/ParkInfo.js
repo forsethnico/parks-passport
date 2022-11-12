@@ -14,15 +14,12 @@ function ParkInfo({ parkCode, addVisited, visited }) {
   const [visitDate, setVisitDate] = useState(new Date());
 
   useEffect(() => {
-    console.log('ParkInfo: ' + parkCode)
     fetchSpecificPark(parkCode)
     .then(parkInfo => {
-      console.log(parkInfo)
       setParkInfo(parkInfo.data[0])
       setLoaded(true)
     })
   .catch(error => {
-      console.log(error)
       setError(error)
     }
   )
