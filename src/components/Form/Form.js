@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { stateNameToAbbreviation } from '../../utilities/states'
+// import { stateNameToAbbreviation } from '../../utilities/states'
 import './Form.css'
 
 function Form(props) {
@@ -17,8 +17,8 @@ function Form(props) {
 
     return (
         <form>
-            <input type="text" placeholder="Search by park name or state" name='query' value={query} onChange={event => setQuery(event.target.value)}/>
-            <button onClick={event => submitSearch(event)}>Search</button>
+            <input type="text" className="search-query" placeholder="Enter park name or state" name='query' value={query} onChange={event => setQuery(event.target.value)}/>
+            <button className ="search-btn" onClick={event => submitSearch(event)}>Search</button>
         </form>
     )
 }

@@ -17,7 +17,7 @@ const Results = ({filteredParks}) => {
 
     return (
         <section className= "filtered-parks-container">
-            {parkCards}
+            <div className="park-cards">{parkCards}</div>
         </section>
     )
 }

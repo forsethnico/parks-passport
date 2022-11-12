@@ -6,7 +6,8 @@ import Form from '../Form/Form'
 import Results from '../Results/Results'
 import ParkInfo from '../ParkInfo/ParkInfo';
 import Passport from '../Passport/Passport';
-import forest from '../../assets/forest-background.jpg'
+import logo from '../../assets/header.png'
+import passport from '../../assets/PassParks.png'
 
 function App() {
     const [error, setError] = useState(null)
@@ -50,11 +51,11 @@ function App() {
       return (
         <main className = "App">
           <nav>
-            <NavLink to ="/" style={{textDecoration: "none"}}>
-              <div className = "logo-title">
-                {/* <img src = {forest} className="logo" alt="picnic table logo"/> */}
-                <h1 className = "app-title">National Parks Passport</h1>
-              </div>
+            <NavLink to ="/">
+              <img src = {logo} className="logo" alt="passport header"/>
+            </NavLink>
+            <NavLink to ="/passport">
+                <img src ={passport} className="passport-link" alt="passport"/>
             </NavLink>
           </nav>
           {!error && (

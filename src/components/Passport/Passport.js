@@ -11,7 +11,8 @@ function Passport({ visited, parks }) {
       <Stamp
         url={park.images[0].url}
         name={park.fullName}
-        date={visited[park.id]}
+        date={visited[park.id].toDateString()}
+        key={park.id}
       />
     );
   });

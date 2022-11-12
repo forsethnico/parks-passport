@@ -1,13 +1,19 @@
+
 .park-card {
-    width: 7rem;
-    height: 6rem;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #A4AFAE;
+    border-radius: 6px;    
 }
 
 .park-image {
     width: 15rem;
     height: 10rem;
+    border-radius: 6px 6px 0px 0px;
 }
-
-/* .park-name {
-
-} */
+/* 
+.park-name {
+}  */

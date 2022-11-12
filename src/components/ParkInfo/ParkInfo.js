@@ -16,7 +16,7 @@ function ParkInfo({ selectedPark, addVisited }) {
       <section className="individual-park">
         <section className="individual-park-container">
           <img
-            src={selectedPark.url}
+            src={selectedPark.images[0].url}
             alt="large park scenery"
             className="individual-park-image"
           />
