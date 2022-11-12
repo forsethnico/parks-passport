@@ -13,11 +13,16 @@ function Passport({ visited, parks }) {
         name={park.fullName}
         date={visited[park.id].toDateString()}
         key={park.id}
+        parkCode = {park.parkCode}
       />
     );
   });
-  return <section className="passport-stamp-container">{parkStamps}</section>;
-}
+  return (<section className="passport-stamp-container">
+    <div className ="stamp-cards">
+      {parkStamps}
+    </div>
+    </section>
+)}
 
 Passport.propTypes = {
     parks: PropTypes.array.isRequired,

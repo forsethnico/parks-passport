@@ -1,4 +1,11 @@
 .passport-stamp-container {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.stamp-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 2rem;
