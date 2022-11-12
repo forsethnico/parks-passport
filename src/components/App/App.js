@@ -7,7 +7,7 @@ import Results from "../Results/Results";
 import ParkInfo from "../ParkInfo/ParkInfo";
 import Passport from "../Passport/Passport";
 import logo from "../../assets/header.png";
-import passport from "../../assets/PassParks.png";
+import passport from "../../assets/parksPassport.png";
 
 function App() {
   const [error, setError] = useState(null);

@@ -1,0 +1,1175 @@
+[
+    {
+        "id": "77E0D7F0-1942-494A-ACE2-9004D2BDC59E",
+        "url": "https://www.nps.gov/abli/index.htm",
+        "fullName": "Abraham Lincoln Birthplace National Historical Park",
+        "parkCode": "abli",
+        "description": "For over a century people from around the world have come to rural Central Kentucky to honor the humble beginnings of our 16th president, Abraham Lincoln. His early life on Kentucky's frontier shaped his character and prepared him to lead the nation through Civil War. Visit our country's first memorial to Lincoln, built with donations from young and old, and the site of his childhood home.",
+        "latitude": "37.5858662",
+        "longitude": "-85.67330523",
+        "latLong": "lat:37.5858662, long:-85.67330523",
+        "activities": [
+            {
+                "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+                "name": "Astronomy"
+            },
+            {
+                "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+                "name": "Stargazing"
+            },
+            {
+                "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+                "name": "Food"
+            },
+            {
+                "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+                "name": "Picnicking"
+            },
+            {
+                "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+                "name": "Guided Tours"
+            },
+            {
+                "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+                "name": "Self-Guided Tours - Walking"
+            },
+            {
+                "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+                "name": "Junior Ranger Program"
+            },
+            {
+                "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+                "name": "Wildlife Watching"
+            },
+            {
+                "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+                "name": "Birdwatching"
+            },
+            {
+                "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+                "name": "Park Film"
+            },
+            {
+                "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+                "name": "Museum Exhibits"
+            },
+            {
+                "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+                "name": "Shopping"
+            },
+            {
+                "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+                "name": "Bookstore and Park Store"
+            },
+            {
+                "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+                "name": "Gift Shop and Souvenirs"
+            }
+        ],
+        "topics": [
+            {
+                "id": "D10852A3-443C-4743-A5FA-6DD6D2A054B3",
+                "name": "Birthplace"
+            },
+            {
+                "id": "F669BC40-BDC4-41C0-9ACE-B2CD25373045",
+                "name": "Presidents"
+            },
+            {
+                "id": "0D00073E-18C3-46E5-8727-2F87B112DDC6",
+                "name": "Animals"
+            },
+            {
+                "id": "957EF2BD-AC6C-4B7B-BD9A-87593ADC6691",
+                "name": "Birds"
+            },
+            {
+                "id": "E25F3456-43ED-45DD-93BC-057F9B944F7A",
+                "name": "Caves, Caverns and Karst"
+            },
+            {
+                "id": "F0F97E32-2F29-41B4-AF98-9FBE8DAB36B1",
+                "name": "Geology"
+            },
+            {
+                "id": "4BE01DC5-52E6-4F18-8C9A-B22D65965F6D",
+                "name": "Groundwater"
+            },
+            {
+                "id": "0E1A04CC-EB51-4F18-93D4-EC0B0B4EC1E3",
+                "name": "Freshwater Springs"
+            },
+            {
+                "id": "A7359FC4-DAD8-45F5-AF15-7FF62F816ED3",
+                "name": "Night Sky"
+            }
+        ],
+        "states": "KY",
+        "contacts": {
+            "phoneNumbers": [
+                {
+                    "phoneNumber": "2703583137",
+                    "description": "",
+                    "extension": "",
+                    "type": "Voice"
+                },
+                {
+                    "phoneNumber": "2703583874",
+                    "description": "",
+                    "extension": "",
+                    "type": "Fax"
+                }
+            ],
+            "emailAddresses": [
+                {
+                    "description": "",
+                    "emailAddress": "ABLI_Administration@nps.gov"
+                }
+            ]
+        },
+        "entranceFees": [
+            {
+                "cost": "0.00",
+                "description": "There is no fee associated with visiting either unit of the park.",
+                "title": "Fee Free Park"
+            }
+        ],
+        "entrancePasses": [],
+        "fees": [],
+        "directionsInfo": "The Birthplace Unit of the park is located approximately 2 miles south of the town of Hodgenville on U.S. Highway 31E South. The Boyhood Home Unit at Knob Creek is located approximately 10 miles northeast of the Birthplace Unit of the park.",
+        "directionsUrl": "http://www.nps.gov/abli/planyourvisit/directions.htm",
+        "operatingHours": [
+            {
+                "exceptions": [
+                    {
+                        "exceptionHours": {},
+                        "startDate": "2022-11-24",
+                        "name": "Park is Closed",
+                        "endDate": "2022-11-24"
+                    },
+                    {
+                        "exceptionHours": {},
+                        "startDate": "2022-12-26",
+                        "name": "Park is Closed",
+                        "endDate": "2022-12-26"
+                    },
+                    {
+                        "exceptionHours": {},
+                        "startDate": "2023-01-02",
+                        "name": "Park is Closed",
+                        "endDate": "2023-01-02"
+                    }
+                ],
+                "description": "Memorial Building:\nopen 9:00 am - 4:30 pm eastern time.\n\nBirthplace Unit Visitor Center and Grounds: \nopen 9:00 am - 5:00 pm eastern time.",
+                "standardHours": {
+                    "wednesday": "9:00AM - 5:00PM",
+                    "monday": "9:00AM - 5:00PM",
+                    "thursday": "9:00AM - 5:00PM",
+                    "sunday": "9:00AM - 5:00PM",
+                    "tuesday": "9:00AM - 5:00PM",
+                    "friday": "9:00AM - 5:00PM",
+                    "saturday": "9:00AM - 5:00PM"
+                },
+                "name": "Birthplace Unit"
+            },
+            {
+                "exceptions": [
+                    {
+                        "exceptionHours": {
+                            "wednesday": "Closed",
+                            "monday": "Closed",
+                            "thursday": "Closed",
+                            "sunday": "10:00AM - 4:00PM",
+                            "tuesday": "Closed",
+                            "friday": "Closed",
+                            "saturday": "10:00AM - 4:00PM"
+                        },
+                        "startDate": "2023-04-01",
+                        "name": "Spring Hours - Visitor Center at Knob Creek",
+                        "endDate": "2023-05-31"
+                    },
+                    {
+                        "exceptionHours": {
+                            "wednesday": "Closed",
+                            "monday": "Closed",
+                            "thursday": "Closed",
+                            "sunday": "10:00AM - 4:00PM",
+                            "tuesday": "Closed",
+                            "friday": "Closed",
+                            "saturday": "10:00AM - 4:00PM"
+                        },
+                        "startDate": "2023-09-01",
+                        "name": "Fall Hours - Knob Creek Visitor Center",
+                        "endDate": "2023-10-31"
+                    }
+                ],
+                "description": "The Boyhood Home Unit at Knob Creek Grounds:\nopen daily dawn to dusk.\n\nKnob Creek Tavern Visitor Center:\nopen on weekends in April, May, September and October and 5 days a week from Memorial Day to Labor day from 10 am to 4pm (Thursday - Monday) closed for the winter.",
+                "standardHours": {
+                    "wednesday": "Closed",
+                    "monday": "10:00AM - 4:00PM",
+                    "thursday": "10:00AM - 4:00PM",
+                    "sunday": "10:00AM - 4:00PM",
+                    "tuesday": "Closed",
+                    "friday": "10:00AM - 4:00PM",
+                    "saturday": "10:00AM - 4:00PM"
+                },
+                "name": "Boyhood Unit"
+            }
+        ],
+        "addresses": [
+            {
+                "postalCode": "42748",
+                "city": "Hodgenville",
+                "stateCode": "KY",
+                "line1": "2995 Lincoln Farm Road",
+                "type": "Physical",
+                "line3": "",
+                "line2": ""
+            },
+            {
+                "postalCode": "42748",
+                "city": "Hodgenville",
+                "stateCode": "KY",
+                "line1": "2995 Lincoln Farm Road",
+                "type": "Mailing",
+                "line3": "",
+                "line2": ""
+            }
+        ],
+        "images": [
+            {
+                "credit": "NPS Photo",
+                "title": "The Memorial Building with fall colors",
+                "altText": "The Memorial Building surrounded by fall colors",
+                "caption": "Over 200,000 people a year come to walk up the steps of the Memorial Building to visit the site where Abraham Lincoln was born",
+                "url": "https://www.nps.gov/common/uploads/structured_data/3C861078-1DD8-B71B-0B774A242EF6A706.jpg"
+            },
+            {
+                "credit": "NPS Photo",
+                "title": "The Memorial Building",
+                "altText": "The first memorial erected to honor Abraham Lincoln",
+                "caption": "The Memorial Building constructed on the traditional site of the birth of Abraham Lincoln.",
+                "url": "https://www.nps.gov/common/uploads/structured_data/3C861263-1DD8-B71B-0B71EF9B95F9644F.jpg"
+            },
+            {
+                "credit": "NPS Photo",
+                "title": "The Symbolic Birth Cabin of Abraham Lincoln",
+                "altText": "The symbolic birth cabin on the traditional site of the birth of Abraham Lincoln.",
+                "caption": "The symbolic birth cabin of Abraham Lincoln.",
+                "url": "https://www.nps.gov/common/uploads/structured_data/3C86137D-1DD8-B71B-0B978BACD7EBAEF1.jpg"
+            },
+            {
+                "credit": "NPS Photo",
+                "title": "Statue of the Lincoln Family in the Visitor Center",
+                "altText": "Statue of the Lincoln family in the park's Visitor Center",
+                "caption": "Visitors to the park can view the statue of the Lincoln family.",
+                "url": "https://www.nps.gov/common/uploads/structured_data/3C8614D1-1DD8-B71B-0B1AF72CA452B051.jpg"
+            }
+        ],
+        "weatherInfo": "There are four distinct seasons in Central Kentucky. However, temperature and weather conditions can vary widely within those seasons. Spring and Fall are generally pleasant with frequent rain showers. Summer is usually hot and humid. Winter is moderately cold with mixed precipitation.",
+        "name": "Abraham Lincoln Birthplace",
+        "designation": "National Historical Park"
+    },
+    {
+        "id": "8415526C-C932-4236-A634-2D89DF718936",
+        "url": "https://www.nps.gov/anti/index.htm",
+        "fullName": "Antietam National Battlefield",
+        "parkCode": "anti",
+        "description": "23,000 soldiers were killed, wounded or missing after twelve hours of savage combat on September 17, 1862. The Battle of Antietam ended the Confederate Army of Northern Virginia's first invasion into the North and led Abraham Lincoln to issue the preliminary Emancipation Proclamation.",
+        "latitude": "39.46763452",
+        "longitude": "-77.73828017",
+        "latLong": "lat:39.46763452, long:-77.73828017",
+        "activities": [
+            {
+                "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+                "name": "Biking"
+            },
+            {
+                "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+                "name": "Road Biking"
+            },
+            {
+                "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+                "name": "Camping"
+            },
+            {
+                "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+                "name": "Group Camping"
+            },
+            {
+                "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+                "name": "Guided Tours"
+            },
+            {
+                "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+                "name": "Self-Guided Tours - Walking"
+            },
+            {
+                "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+                "name": "Self-Guided Tours - Auto"
+            },
+            {
+                "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+                "name": "Hiking"
+            },
+            {
+                "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+                "name": "Living History"
+            },
+            {
+                "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+                "name": "Historic Weapons Demonstration"
+            },
+            {
+                "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+                "name": "Junior Ranger Program"
+            },
+            {
+                "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+                "name": "Wildlife Watching"
+            },
+            {
+                "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+                "name": "Birdwatching"
+            },
+            {
+                "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+                "name": "Park Film"
+            },
+            {
+                "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+                "name": "Museum Exhibits"
+            },
+            {
+                "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+                "name": "Shopping"
+            },
+            {
+                "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+                "name": "Bookstore and Park Store"
+            }
+        ],
+        "topics": [
+            {
+                "id": "28AEAE85-9DDA-45B6-981B-1CFCDCC61E14",
+                "name": "African American Heritage"
+            },
+            {
+                "id": "00F3C3F9-2D67-4802-81AE-CCEA5D3BA370",
+                "name": "Arts"
+            },
+            {
+                "id": "9BD60DC0-C82B-42BA-A170-456B7423429D",
+                "name": "Photography"
+            },
+            {
+                "id": "607D41B0-F830-4C07-A557-BCEF880A3929",
+                "name": "Burial, Cemetery and Gravesite"
+            },
+            {
+                "id": "570E8E93-3A49-45FB-B11A-F2F984EAC862",
+                "name": "National Cemetery"
+            },
+            {
+                "id": "D9FC6D14-F8C7-4EBA-86EA-DFD99B6BB4F5",
+                "name": "Enslavement"
+            },
+            {
+                "id": "4B3CD083-7500-434B-A8C2-D355925E0245",
+                "name": "Medicine"
+            },
+            {
+                "id": "3B0D607D-9933-425A-BFA0-21529AC4734C",
+                "name": "Military"
+            },
+            {
+                "id": "E411F474-A530-4804-9D23-1D94C78B41E4",
+                "name": "Infantry and Militia"
+            },
+            {
+                "id": "B145FAB8-5462-4FE2-964E-464D3A5E7F96",
+                "name": "Artillery"
+            },
+            {
+                "id": "97CCB419-196C-4B95-BB3A-621458F78415",
+                "name": "US Army"
+            },
+            {
+                "id": "6A3658B4-FB6E-4E23-A63A-9AEF11988831",
+                "name": "Battlefields"
+            },
+            {
+                "id": "BEB7E470-13B2-4E00-84B2-0402D98DAF69",
+                "name": "Monuments and Memorials"
+            },
+            {
+                "id": "BAA85463-A96E-4CF4-A260-290D195423DB",
+                "name": "Reconstruction"
+            },
+            {
+                "id": "3CDB67A9-1EAC-408D-88EC-F26FA35E90AF",
+                "name": "Schools and Education"
+            },
+            {
+                "id": "27BF8807-54EA-4A3D-B073-AA7AA361CD7E",
+                "name": "Wars and Conflicts"
+            },
+            {
+                "id": "A8E54356-20CD-490E-B34D-AC6A430E6F47",
+                "name": "Civil War"
+            },
+            {
+                "id": "7DA81DAB-5045-4953-9C20-36590AD9FA95",
+                "name": "Women's History"
+            },
+            {
+                "id": "5BE55D7F-BDB6-4E3D-AC35-2D8EBB974417",
+                "name": "Trails"
+            }
+        ],
+        "states": "MD",
+        "contacts": {
+            "phoneNumbers": [
+                {
+                    "phoneNumber": "3014325124",
+                    "description": "",
+                    "extension": "",
+                    "type": "Voice"
+                }
+            ],
+            "emailAddresses": [
+                {
+                    "description": "",
+                    "emailAddress": "anti_info@nps.gov"
+                }
+            ]
+        },
+        "entranceFees": [
+            {
+                "cost": "10.00",
+                "description": "3 day pass - This is the entry fee to the battlefield proper, museum, movie, and ranger programs.",
+                "title": "Antietam National Battlefield Entrance Fee"
+            },
+            {
+                "cost": "20.00",
+                "description": "3 day vehicle pass.  This pass covers everyone in a vehicle, ie. family.  The pass covers entry to the battlefield proper, museum, movie, and ranger programs.",
+                "title": "Antietam National Battlefield Entrance Fee"
+            },
+            {
+                "cost": "0.00",
+                "description": "•$100 Motor Coach/Commercial Tour Groups with 26 or more people\n\n•$40 per passenger bus with 7-25 people\n\n•$25 per passenger bus with 1-6 people\n\nBus drivers (1 per vehicle) FREE\n\nStep on guides can be hired through our bookstore, which is operated by Eastern National. Please call (301)432-4329 to schedule a guide.",
+                "title": "Group Entrance Fees"
+            }
+        ],
+        "entrancePasses": [
+            {
+                "cost": "80.00",
+                "description": "Interagency Lifetime Senior Pass:  $80 Lifetime.  This is a pass for U.S. Citizens or permanent residents, age 62 or over. This pass provides access to, and the use of Federal recreation sites that charge an Entrance or Standard Amenity Fee*. This pass admits the pass holder and passengers in a non-commercial vehicle at per vehicle areas and pass holder plus 3 adults at per person fee areas.",
+                "title": "Interagency Lifetime Senior Pass"
+            },
+            {
+                "cost": "0.00",
+                "description": "Interagency Access Pass:  Valid for life. This is a lifetime pass for U.S. Citizens or permanent resident with permanent disabilities. Documentation is required to obtain the pass. This pass provides access to, and use of Federal recreation sites that charge an entrance fee.",
+                "title": "Interagency Access Pass"
+            },
+            {
+                "cost": "35.00",
+                "description": "Valid for one year from month of purchase for Antietam National Battlefield only. Admits pass holder and passengers in a single private vehicle.",
+                "title": "Antietam National Battlefield Annual Pass"
+            },
+            {
+                "cost": "0.00",
+                "description": "This is a free pass to active duty military personal and their dependents. In order to qualify for the pass, the military member must present a valid Department of Defense, CAC Card. Dependents must present a valid Department of Defense ID (DD Form 1173) that identifies the dependent and his or her sponsor. Some members of the Military Reserve might not be eligible.",
+                "title": "Interagency Military Pass"
+            },
+            {
+                "cost": "20.00",
+                "description": "Interagency Annual Senior Pass:  $20 Annually.  This is a pass for U.S. Citizens or permanent residents, age 62 or over. This pass provides access to, and the use of Federal recreation sites that charge an Entrance or Standard Amenity Fee*. This pass admits the pass holder and passengers in a non-commercial vehicle at per vehicle areas and pass holder plus 3 adults at per person fee areas.",
+                "title": "Interagency Annual Senior Pass"
+            },
+            {
+                "cost": "0.00",
+                "description": "Fourth grade students and their families can benefit from free admission to fee-collecting parks, public lands and waters by downloading a paper pass from the Every Kid Outdoors website. In addition, if the 4th grader would like to exchange the paper passes for a more durable \"keepsake\" Fourth Grade Annual Pass, they may do so at the park's visitor center from 9:00 to 4:00 daily.",
+                "title": "4th Grade Student Pass"
+            }
+        ],
+        "fees": [],
+        "directionsInfo": "Ten miles south of I-70 on Maryland Route 65",
+        "directionsUrl": "http://www.nps.gov/anti/planyourvisit/directions.htm",
+        "operatingHours": [
+            {
+                "exceptions": [
+                    {
+                        "exceptionHours": {
+                            "wednesday": "Closed",
+                            "monday": "Closed",
+                            "thursday": "Closed",
+                            "sunday": "Closed",
+                            "tuesday": "Closed",
+                            "friday": "Closed",
+                            "saturday": "Closed"
+                        },
+                        "startDate": "2022-11-24",
+                        "name": "Thanksgiving Day",
+                        "endDate": "2022-11-24"
+                    },
+                    {
+                        "exceptionHours": {
+                            "wednesday": "Closed",
+                            "monday": "Closed",
+                            "thursday": "Closed",
+                            "sunday": "Closed",
+                            "tuesday": "Closed",
+                            "friday": "Closed",
+                            "saturday": "Closed"
+                        },
+                        "startDate": "2022-12-26",
+                        "name": "Christmas Day",
+                        "endDate": "2022-12-26"
+                    },
+                    {
+                        "exceptionHours": {
+                            "wednesday": "Closed",
+                            "monday": "Closed",
+                            "thursday": "Closed",
+                            "sunday": "Closed",
+                            "tuesday": "Closed",
+                            "friday": "Closed",
+                            "saturday": "Closed"
+                        },
+                        "startDate": "2023-01-02",
+                        "name": "New Year's Day",
+                        "endDate": "2023-01-02"
+                    }
+                ],
+                "description": "The visitor center is open every day except Thanksgiving, Christmas, and New Year's Day.",
+                "standardHours": {
+                    "wednesday": "9:00AM - 5:00PM",
+                    "monday": "9:00AM - 5:00PM",
+                    "thursday": "9:00AM - 5:00PM",
+                    "sunday": "9:00AM - 5:00PM",
+                    "tuesday": "9:00AM - 5:00PM",
+                    "friday": "9:00AM - 5:00PM",
+                    "saturday": "9:00AM - 5:00PM"
+                },
+                "name": "Antietam National Battlefield Visitor Center"
+            }
+        ],
+        "addresses": [
+            {
+                "postalCode": "21782",
+                "city": "Sharpsburg",
+                "stateCode": "MD",
+                "line1": "5831 Dunker Church Rd.",
+                "type": "Physical",
+                "line3": "",
+                "line2": ""
+            },
+            {
+                "postalCode": "21782",
+                "city": "Sharpsburg",
+                "stateCode": "MD",
+                "line1": "P.O. Box 158",
+                "type": "Mailing",
+                "line3": "",
+                "line2": ""
+            }
+        ],
+        "images": [
+            {
+                "credit": "NPS",
+                "title": "Monument at Sunset",
+                "altText": "a monument of a soldier at sunset",
+                "caption": "130th Pennsylvania Monument at Bloody Lane",
+                "url": "https://www.nps.gov/common/uploads/structured_data/3C80828B-1DD8-B71B-0BAC8994DD862724.jpg"
+            },
+            {
+                "credit": "NPS",
+                "title": "Burnside Bridge",
+                "altText": "three arch stone bridge over Antietam Creek",
+                "caption": "Burnside Bridge in the snow from the Union side of Antietam Creek.",
+                "url": "https://www.nps.gov/common/uploads/structured_data/3C8085D6-1DD8-B71B-0BBFD59E69D8F9F6.jpg"
+            },
+            {
+                "credit": "NPS",
+                "title": "Cannon the Field",
+                "altText": "artillery piece sitting on a rock break",
+                "caption": "Artillery played a key role at Antietam.  Over 500 cannon were involved in the fighting.",
+                "url": "https://www.nps.gov/common/uploads/structured_data/3C80843B-1DD8-B71B-0B95E2404AB420FA.jpg"
+            },
+            {
+                "credit": "NPS",
+                "title": "Antietam National Cemetery",
+                "altText": "a monument of a soldier in the background with graves in front of the monument",
+                "caption": "Private Soldier Monument at the cemetery",
+                "url": "https://www.nps.gov/common/uploads/structured_data/3C807F36-1DD8-B71B-0B768E166A3DD896.jpg"
+            },
+            {
+                "credit": "NPS Antietam/ BBaracz",
+                "title": "Dunker Church",
+                "altText": "one room house covered in snow",
+                "caption": "The Dunker Church covered in snow.",
+                "url": "https://www.nps.gov/common/uploads/structured_data/7FBFE821-E7DB-9DF0-69434346F6827418.jpg"
+            },
+            {
+                "credit": "NPS Antietam/ BBaracz",
+                "title": "Burnside Bridge",
+                "altText": "stone bridge over antietam creek",
+                "caption": "Burnside Bridge from the Confederate side of Antietam Creek.",
+                "url": "https://www.nps.gov/common/uploads/structured_data/8270E60A-C263-91AE-2BBAE63B7077DEAD.jpg"
+            },
+            {
+                "credit": "NPS",
+                "title": "Fog Over the Battlefield",
+                "altText": "fog filling in the low areas of the field at sunset",
+                "caption": "View from the visitor center looking toward Bloody Lane at sunset",
+                "url": "https://www.nps.gov/common/uploads/structured_data/3C8080AA-1DD8-B71B-0BE68488E3F4CDCF.jpg"
+            },
+            {
+                "credit": "NPS Antietam/ BBaracz",
+                "title": "Antietam National Cemetery Lodge Building",
+                "altText": "stone building with black fence in foreground",
+                "caption": "The National Cemetery Lodge Building sits just inside the gates of the cemetery.",
+                "url": "https://www.nps.gov/common/uploads/structured_data/828E1DBA-9A58-DD12-D62FF6F259633B3D.jpg"
+            },
+            {
+                "credit": "NPS Antietam/ BBaracz",
+                "title": "Dunker Church",
+                "altText": "small white building with cannon in the foreground",
+                "caption": "Spring at the Battlefield.",
+                "url": "https://www.nps.gov/common/uploads/structured_data/818AAC53-0ABA-C85F-E176D917EBECBABD.jpg"
+            }
+        ],
+        "weatherInfo": "The weather is fairly mild. Summers can be very warm and humid and winters cold and snowy. We have four distinct seasons with the fall and spring being the best times to visit the battlefield.",
+        "name": "Antietam",
+        "designation": "National Battlefield"
+    },
+    {
+        "id": "8C330DA3-6194-4034-8948-C6B6772B82A0",
+        "url": "https://www.nps.gov/gett/index.htm",
+        "fullName": "Gettysburg National Military Park",
+        "parkCode": "gett",
+        "description": "The Battle of Gettysburg was a turning point in the Civil War, the Union victory that ended General Robert E. Lee's second and most ambitious invasion of the North. Often referred to as the \"High Water Mark of the Rebellion\", Gettysburg was the Civil War's bloodiest battle and was also the inspiration for President Abraham Lincoln's immortal \"Gettysburg Address\".",
+        "latitude": "39.81557366",
+        "longitude": "-77.23246758",
+        "latLong": "lat:39.81557366, long:-77.23246758",
+        "activities": [
+            {
+                "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+                "name": "Arts and Culture"
+            },
+            {
+                "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+                "name": "Auto and ATV"
+            },
+            {
+                "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+                "name": "Scenic Driving"
+            },
+            {
+                "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+                "name": "Biking"
+            },
+            {
+                "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+                "name": "Camping"
+            },
+            {
+                "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+                "name": "Food"
+            },
+            {
+                "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+                "name": "Guided Tours"
+            },
+            {
+                "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+                "name": "Self-Guided Tours - Walking"
+            },
+            {
+                "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+                "name": "Self-Guided Tours - Auto"
+            },
+            {
+                "id": "3DE599E2-22ED-40BF-B383-EDA073563C1E",
+                "name": "Bus/Shuttle Guided Tour"
+            },
+            {
+                "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+                "name": "Hiking"
+            },
+            {
+                "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+                "name": "Horse Trekking"
+            },
+            {
+                "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+                "name": "Horseback Riding"
+            },
+            {
+                "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+                "name": "Living History"
+            },
+            {
+                "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+                "name": "Historic Weapons Demonstration"
+            },
+            {
+                "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+                "name": "Junior Ranger Program"
+            },
+            {
+                "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+                "name": "Wildlife Watching"
+            },
+            {
+                "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+                "name": "Birdwatching"
+            },
+            {
+                "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+                "name": "Park Film"
+            },
+            {
+                "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+                "name": "Museum Exhibits"
+            },
+            {
+                "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+                "name": "Shopping"
+            },
+            {
+                "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+                "name": "Bookstore and Park Store"
+            },
+            {
+                "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+                "name": "Gift Shop and Souvenirs"
+            }
+        ],
+        "topics": [
+            {
+                "id": "00F3C3F9-2D67-4802-81AE-CCEA5D3BA370",
+                "name": "Arts"
+            },
+            {
+                "id": "607D41B0-F830-4C07-A557-BCEF880A3929",
+                "name": "Burial, Cemetery and Gravesite"
+            },
+            {
+                "id": "570E8E93-3A49-45FB-B11A-F2F984EAC862",
+                "name": "National Cemetery"
+            },
+            {
+                "id": "4B3CD083-7500-434B-A8C2-D355925E0245",
+                "name": "Medicine"
+            },
+            {
+                "id": "97716EF5-D001-449C-993A-EC15AB8FD345",
+                "name": "Hospital"
+            },
+            {
+                "id": "3B0D607D-9933-425A-BFA0-21529AC4734C",
+                "name": "Military"
+            },
+            {
+                "id": "E411F474-A530-4804-9D23-1D94C78B41E4",
+                "name": "Infantry and Militia"
+            },
+            {
+                "id": "B145FAB8-5462-4FE2-964E-464D3A5E7F96",
+                "name": "Artillery"
+            },
+            {
+                "id": "69790851-A62A-4920-AA3E-E61406FFC27D",
+                "name": "Cavalry"
+            },
+            {
+                "id": "6A3658B4-FB6E-4E23-A63A-9AEF11988831",
+                "name": "Battlefields"
+            },
+            {
+                "id": "BEB7E470-13B2-4E00-84B2-0402D98DAF69",
+                "name": "Monuments and Memorials"
+            },
+            {
+                "id": "F669BC40-BDC4-41C0-9ACE-B2CD25373045",
+                "name": "Presidents"
+            },
+            {
+                "id": "518B32FB-339D-4C52-B2C2-04BF406AA4B0",
+                "name": "Religion and Spirituality"
+            },
+            {
+                "id": "98F41FDF-B73F-4B68-8010-53CCB2891E3B",
+                "name": "Churches"
+            },
+            {
+                "id": "3CDB67A9-1EAC-408D-88EC-F26FA35E90AF",
+                "name": "Schools and Education"
+            },
+            {
+                "id": "27BF8807-54EA-4A3D-B073-AA7AA361CD7E",
+                "name": "Wars and Conflicts"
+            },
+            {
+                "id": "A8E54356-20CD-490E-B34D-AC6A430E6F47",
+                "name": "Civil War"
+            },
+            {
+                "id": "0D00073E-18C3-46E5-8727-2F87B112DDC6",
+                "name": "Animals"
+            },
+            {
+                "id": "957EF2BD-AC6C-4B7B-BD9A-87593ADC6691",
+                "name": "Birds"
+            },
+            {
+                "id": "393F60FB-80D6-46F7-B0FB-BBF3C90F59FD",
+                "name": "Tortoises and Turtles"
+            },
+            {
+                "id": "94262026-92F5-48E9-90EF-01CEAEFBA4FF",
+                "name": "Grasslands"
+            },
+            {
+                "id": "1AEDC86F-5792-487F-8CDF-9E92CAB97ACE",
+                "name": "Prairies"
+            },
+            {
+                "id": "AEA4C5FD-F25C-4C3D-97FE-2767ED3EE682",
+                "name": "Meadows"
+            },
+            {
+                "id": "9C9FCBB6-360B-4743-8155-6F9341CBE01B",
+                "name": "Scenic Views"
+            },
+            {
+                "id": "1365C347-952C-475A-B755-731DD523C195",
+                "name": "Wetlands"
+            }
+        ],
+        "states": "PA",
+        "contacts": {
+            "phoneNumbers": [],
+            "emailAddresses": [
+                {
+                    "description": "",
+                    "emailAddress": "GETT_Superintendent@nps.gov"
+                }
+            ]
+        },
+        "entranceFees": [
+            {
+                "cost": "0.00",
+                "description": "Entrance to the park is FREE.",
+                "title": "Park Entrance"
+            }
+        ],
+        "entrancePasses": [],
+        "fees": [],
+        "directionsInfo": "Gettysburg National Military Park is located in Adams County, Pennsylvania. The museum and visitor center is located at 1195 Baltimore Pike (Route 97) with a back entrance from the Taneytown Road (State Rt. 134). From North or South, follow US 15 to Gettysburg and watch for signs to direct you to the National Park Service Museum and Visitor Center. From East or West, drive into Gettysburg on US Rt. 30, turn South on Baltimore Street (Rt. 97), and follow signs to the entrance of the visitor center.",
+        "directionsUrl": "http://www.nps.gov/gett/planyourvisit/directions.htm",
+        "operatingHours": [
+            {
+                "exceptions": [],
+                "description": "The battlefield and roads are open thirty minutes before sunrise to thirty minutes after sunset.\nVisitors can plan their visit and obtain a listing of sunrise and sunset times by day in Gettysburg, PA at: https://sunrise-sunset.org/us/gettysburg-pa.",
+                "standardHours": {
+                    "wednesday": "Sunrise to Sunset",
+                    "monday": "Sunrise to Sunset",
+                    "thursday": "Sunrise to Sunset",
+                    "sunday": "Sunrise to Sunset",
+                    "tuesday": "Sunrise to Sunset",
+                    "friday": "Sunrise to Sunset",
+                    "saturday": "Sunrise to Sunset"
+                },
+                "name": "Battlefield Hours"
+            }
+        ],
+        "addresses": [
+            {
+                "postalCode": "17325",
+                "city": "Gettysburg",
+                "stateCode": "PA",
+                "line1": "1195 Baltimore Pike",
+                "type": "Physical",
+                "line3": "",
+                "line2": ""
+            },
+            {
+                "postalCode": "17325",
+                "city": "Gettysburg",
+                "stateCode": "PA",
+                "line1": "1195 Baltimore Pike",
+                "type": "Mailing",
+                "line3": "",
+                "line2": ""
+            }
+        ],
+        "images": [
+            {
+                "credit": "NPS Photo",
+                "title": "The Henry Slocum Monument",
+                "altText": "A canon sits in front of an equestrian statue.",
+                "caption": "This statue of Henry Slocum sits on Steven's Knoll near Culp's Hill.",
+                "url": "https://www.nps.gov/common/uploads/structured_data/C5B413E6-FD8C-00FC-60191939A57FE501.jpg"
+            },
+            {
+                "credit": "NPS Photo",
+                "title": "The Mississippi Monument at sunrise",
+                "altText": "The Mississippi Monument at sunrise",
+                "caption": "The Mississippi Monument at sunrise.",
+                "url": "https://www.nps.gov/common/uploads/structured_data/3C8194A0-1DD8-B71B-0BD717F4FDE2A545.jpg"
+            },
+            {
+                "credit": "NPS Photo",
+                "title": "The Irish Brigade Monument",
+                "altText": "The Irish Brigade Monument",
+                "caption": "The Irish Brigade Monument.",
+                "url": "https://www.nps.gov/common/uploads/structured_data/3C819A5B-1DD8-B71B-0BDC501C0730326F.jpg"
+            },
+            {
+                "credit": "NPS Photo",
+                "title": "The Soldiers' National Cemetery during special illumination event",
+                "altText": "The Soldiers' National Cemetery during special illumination event",
+                "caption": "The Soldiers' National Cemetery during special illumination event.",
+                "url": "https://www.nps.gov/common/uploads/structured_data/3C81961A-1DD8-B71B-0B344898BBA96443.jpg"
+            },
+            {
+                "credit": "NPS Photo",
+                "title": "A ranger-led interpretive program",
+                "altText": "A ranger-led interpretive program",
+                "caption": "A ranger-led interpretive program.",
+                "url": "https://www.nps.gov/common/uploads/structured_data/3C819D64-1DD8-B71B-0BABA5013E6D8929.jpg"
+            },
+            {
+                "credit": "NPS Photo",
+                "title": "A rainbow over the Abraham Brian Farm on Cemetery Ridge",
+                "altText": "A rainbow over the Abraham Brian Farm on Cemetery Ridge",
+                "caption": "A rainbow over the Abraham Brian Farm on Cemetery Ridge.",
+                "url": "https://www.nps.gov/common/uploads/structured_data/3C819787-1DD8-B71B-0B0D052F23017472.jpg"
+            },
+            {
+                "credit": "NPS Photo",
+                "title": "A ranger-led interpretive program",
+                "altText": "A ranger-led interpretive program",
+                "caption": "A ranger-led interpretive program.",
+                "url": "https://www.nps.gov/common/uploads/structured_data/3C819BF7-1DD8-B71B-0B02C21F76479742.jpg"
+            },
+            {
+                "credit": "NPS Photo",
+                "title": "The Cyclorama painting",
+                "altText": "The Cyclorama painting",
+                "caption": "The Cyclorama painting.",
+                "url": "https://www.nps.gov/common/uploads/structured_data/3C8198DD-1DD8-B71B-0BCDAB86E7BFF414.jpg"
+            },
+            {
+                "credit": "NPS Photo",
+                "title": "The view from Little Round Top",
+                "altText": "The view from Little Round Top",
+                "caption": "The view from Little Round Top.",
+                "url": "https://www.nps.gov/common/uploads/structured_data/3C81933E-1DD8-B71B-0B1D3D82C99E2A6E.jpg"
+            }
+        ],
+        "weatherInfo": "https://www.nps.gov/gett/planyourvisit/weather.htm",
+        "name": "Gettysburg",
+        "designation": "National Military Park"
+    },
+    {
+        "id": "E9A0608F-46D6-4072-939F-C81E27AAB236",
+        "url": "https://www.nps.gov/libo/index.htm",
+        "fullName": "Lincoln Boyhood National Memorial",
+        "parkCode": "libo",
+        "description": "Abraham Lincoln grew from youth to manhood on this southern Indiana soil. Many character and moral traits of one of the world's most respected leaders was formed and nurtured here. Explore Lincoln's boyhood and learn about the boy who would one day become the leader of our nation.",
+        "latitude": "38.11817004",
+        "longitude": "-86.99656861",
+        "latLong": "lat:38.11817004, long:-86.99656861",
+        "activities": [
+            {
+                "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+                "name": "Arts and Culture"
+            },
+            {
+                "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+                "name": "Cultural Demonstrations"
+            },
+            {
+                "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+                "name": "Biking"
+            },
+            {
+                "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+                "name": "Road Biking"
+            },
+            {
+                "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+                "name": "Guided Tours"
+            },
+            {
+                "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+                "name": "Self-Guided Tours - Walking"
+            },
+            {
+                "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+                "name": "Hiking"
+            },
+            {
+                "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+                "name": "Front-Country Hiking"
+            },
+            {
+                "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+                "name": "Living History"
+            },
+            {
+                "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+                "name": "Junior Ranger Program"
+            },
+            {
+                "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+                "name": "Park Film"
+            },
+            {
+                "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+                "name": "Museum Exhibits"
+            },
+            {
+                "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+                "name": "Shopping"
+            },
+            {
+                "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+                "name": "Bookstore and Park Store"
+            }
+        ],
+        "topics": [
+            {
+                "id": "607D41B0-F830-4C07-A557-BCEF880A3929",
+                "name": "Burial, Cemetery and Gravesite"
+            },
+            {
+                "id": "1F833C99-A75D-4F9E-9256-B96523485466",
+                "name": "Farming and  Agriculture"
+            },
+            {
+                "id": "BEB7E470-13B2-4E00-84B2-0402D98DAF69",
+                "name": "Monuments and Memorials"
+            },
+            {
+                "id": "F669BC40-BDC4-41C0-9ACE-B2CD25373045",
+                "name": "Presidents"
+            }
+        ],
+        "states": "IN",
+        "contacts": {
+            "phoneNumbers": [
+                {
+                    "phoneNumber": "8129374541",
+                    "description": "",
+                    "extension": "",
+                    "type": "Voice"
+                },
+                {
+                    "phoneNumber": "8129379929",
+                    "description": "",
+                    "extension": "",
+                    "type": "Fax"
+                }
+            ],
+            "emailAddresses": [
+                {
+                    "description": "",
+                    "emailAddress": "LIBO_superintendent@nps.gov"
+                }
+            ]
+        },
+        "entranceFees": [
+            {
+                "cost": "0.00",
+                "description": "Entry to Lincoln Boyhood is free.",
+                "title": "No entrance fee to the park."
+            }
+        ],
+        "entrancePasses": [],
+        "fees": [],
+        "directionsInfo": "From the east or west - From Interstate 64, exit onto US 231, (exit 57A). Travel south on US 231 to Indiana Highway 162. Take the Santa Claus/Gentryville exit. Turn west (right) on Indiana Highway 162; go 1-1/2 miles to the park entrance on the right. From the north or south - From US 231 take the Santa Claus/Gentryville exit. Turn west on Indiana Highway 162; go 1-1/2 miles to the park entrance on the right.",
+        "directionsUrl": "http://www.nps.gov/libo/planyourvisit/directions.htm",
+        "operatingHours": [
+            {
+                "exceptions": [],
+                "description": "Visitors may tour the park grounds and may daily visit all outside areas from sunrise to sunset. Locations visitors may visit include over two miles of trails, the sculptured panels on the outside of the Memorial Visitor Center, the Pioneer Cemetery, the Cabin-site Memorial, and the Living Historical Farm.",
+                "standardHours": {
+                    "wednesday": "Sunrise to Sunset",
+                    "monday": "Sunrise to Sunset",
+                    "thursday": "Sunrise to Sunset",
+                    "sunday": "Sunrise to Sunset",
+                    "tuesday": "Sunrise to Sunset",
+                    "friday": "Sunrise to Sunset",
+                    "saturday": "Sunrise to Sunset"
+                },
+                "name": "Park Grounds"
+            }
+        ],
+        "addresses": [
+            {
+                "postalCode": "47552",
+                "city": "Lincoln City",
+                "stateCode": "IN",
+                "line1": "3027 East South Street",
+                "type": "Physical",
+                "line3": "",
+                "line2": ""
+            },
+            {
+                "postalCode": "47552",
+                "city": "Lincoln City",
+                "stateCode": "IN",
+                "line1": "3027 East South Street",
+                "type": "Mailing",
+                "line3": "",
+                "line2": "PO Box 1816"
+            }
+        ],
+        "images": [
+            {
+                "credit": "NPS Photo/Paula Alexander",
+                "title": "Lincoln Living Historical Farm",
+                "altText": "Cabin and smokehouse in the fall",
+                "caption": "Replica cabin at re-created 1820s homestead which is on four of the original 160 acres owned by Thomas LIncoln.",
+                "url": "https://www.nps.gov/common/uploads/structured_data/04C50A1E-1DD8-B71B-0B89814283E6E886.jpg"
+            },
+            {
+                "credit": "NPS Photo/Paula Alexander",
+                "title": "Cabin at Living Historical Farm",
+                "altText": "Park ranger is period dress standing near fireplace, cooking in the cabin.",
+                "caption": "Park rangers depict pioneer life in the 1820s.",
+                "url": "https://www.nps.gov/common/uploads/structured_data/3C794095-1DD8-B71B-0B27006290E3733B.jpg"
+            },
+            {
+                "credit": "NPS",
+                "title": "Memorial Visitor Center",
+                "altText": "Memorial Building",
+                "caption": "Memorial Building contains memorial halls to remember Abraham Lincoln and his family.",
+                "url": "https://www.nps.gov/common/uploads/structured_data/11D86084-DF58-8412-113C636E586ACBB6.jpg"
+            },
+            {
+                "credit": "NPS Photo",
+                "title": "Gravesite of Nancy Hanks Lincoln",
+                "altText": "White marble headstone of Nancy Hanks Lincoln in cemetery surrounded by iron fence and trees.",
+                "caption": "The headstone, erected in 1879, marks the burial spot of Abraham Lincoln's mother, who died of milk sickness in 1818.",
+                "url": "https://www.nps.gov/common/uploads/structured_data/D6DA7DB2-BBD1-9286-2133CD10BC9DEC6E.jpg"
+            },
+            {
+                "credit": "NPS Photo",
+                "title": "Cabin Site Memorial",
+                "altText": "Bronze casting on the ground covering bottom logs of a cabin and fireplace.",
+                "caption": "The site of what is believed Memorial at the site of the third Lincoln cabin.",
+                "url": "https://www.nps.gov/common/uploads/structured_data/3C7944B5-1DD8-B71B-0B8D623F04926480.jpg"
+            }
+        ],
+        "weatherInfo": "Southern Indiana has a moderate climate, characterized by warm, yet moist conditions. Summers are usually warm, and winters cool. Much of the area's average 46 inches of precipitation falls in spring, the rainiest season.",
+        "name": "Lincoln Boyhood",
+        "designation": "National Memorial"
+    }
+]
+    
