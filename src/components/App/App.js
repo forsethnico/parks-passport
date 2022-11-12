@@ -73,7 +73,7 @@ function App() {
             <Route exact path= "/parks/:parkCode"
             render={({match}) => {
               return (
-                <ParkInfo selectedPark= {findSelectedPark(match.params.parkCode)} addVisited={addVisited}/>
+                <ParkInfo selectedPark= {findSelectedPark(match.params.parkCode)} addVisited={addVisited} visited={visited}/>
               )
             }}
             />

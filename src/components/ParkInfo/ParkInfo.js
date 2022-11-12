@@ -2,19 +2,21 @@ import React, { useState } from "react";
 import "./ParkInfo.css";
 import PropTypes from "prop-types";
 import stamp from "../../assets/stamp.png";
+import approved from "../../assets/approved.png"
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-function ParkInfo({ selectedPark, addVisited }) {
+function ParkInfo({ selectedPark, addVisited, visited }) {
   const [visitDate, setVisitDate] = useState(new Date());
+  const isVisited = Object.keys(visited).includes(selectedPark.id)
   const parkAddress = selectedPark.addresses[0]
   const parkActivities = selectedPark.activities.map(
     (activity) => activity.name
   );
   if (selectedPark) {
     return (
-      <section className="individual-park">
-        <section className="individual-park-container">
+      <section className="individual-park-container">
+        <section className="individual-park">
           <img
             src={selectedPark.images[0].url}
             alt="large park scenery"
@@ -26,6 +28,13 @@ function ParkInfo({ selectedPark, addVisited }) {
             <p>Address: {`${parkAddress.line1}, ${parkAddress.city}, ${parkAddress.stateCode}`}</p>
             <p>Activities: {parkActivities.join(", ")}</p>
           </section>
+          {isVisited &&
+            <section className="visited">
+              <img src={approved} alt="check mark" className="approval-check-image"/>
+              <h4>Passport stamped!</h4>
+            </section>
+          } 
+          {!isVisited &&
           <section className="add-visited">
             <label htmlFor="visited">Date Visited:</label>
             <DatePicker
@@ -38,6 +47,7 @@ function ParkInfo({ selectedPark, addVisited }) {
               <img className="stamp" src={stamp} alt="stamp" />
             </button>
           </section>
+        }
         </section>
       </section>
     );
@@ -49,6 +59,7 @@ function ParkInfo({ selectedPark, addVisited }) {
 ParkInfo.propTypes = {
   selectedPark: PropTypes.object.isRequired,
   addVisited: PropTypes.func.isRequired,
+  visited: PropTypes.object.isRequired
 };
 
 export default ParkInfo;

@@ -3,18 +3,19 @@
     height: 2rem;
 }
 
-.individual-park {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 .individual-park-container {
     display: flex;
     flex-direction: column;
-    width: 90%;
     justify-content: center;
     align-items: center;
+}
+
+.individual-park {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;   
+    width: 90%;
 }
 
 .individual-park-image {
@@ -22,8 +23,17 @@
     height: 20rem;
 }
 
+.park-info {
+    text-align: left;
+}
+
 .add-visited {
     display: flex;
     flex-direction: row;
+}
+
+.approval-check-image {
+    width: 5rem;
+    height: 5rem;
 }
 
