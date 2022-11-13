@@ -7,6 +7,7 @@ describe("ParkInfo spec", () => {
         json
       );
       cy.visit("http://localhost:3000/parks/abli");
+      cy.url().should('include', '/parks/abli')
     });
   });
 
@@ -78,5 +79,11 @@ describe("Park Info errors", () => {
       "500:Internal Server Error- sorry try again!"
     );
   });
+
+  it('should display a message to the user when a garbage park code url is entered', () => {
+    cy.visit("http://localhost:3000/parks/garbage");
+    cy.contains('.error-message', 'Invalid park code- sorry try again!')
+  });
+  
 });
 

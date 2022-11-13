@@ -16,8 +16,13 @@ function ParkInfo({ parkCode, addVisited, visited }) {
   useEffect(() => {
     fetchSpecificPark(parkCode)
     .then(response => {
-      setParkInfo(response.data[0])
-      setLoaded(true)
+      console.log(response)
+      if (response.data.length > 0) {
+        setParkInfo(response.data[0])
+        setLoaded(true)
+      } else {
+        setError('Invalid park code');
+      }
     })
   .catch(error => {
       setError(error.message)
