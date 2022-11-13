@@ -15,15 +15,15 @@ function ParkInfo({ parkCode, addVisited, visited }) {
 
   useEffect(() => {
     fetchSpecificPark(parkCode)
-    .then(parkInfo => {
-      setParkInfo(parkInfo.data[0])
+    .then(response => {
+      setParkInfo(response.data[0])
       setLoaded(true)
     })
   .catch(error => {
-      setError(error)
+      setError(error.message)
     }
   )
-  }, []) 
+  }, [parkCode]) 
   
   if(loaded) {
     const isVisited = Object.keys(visited).includes(parkCode)
@@ -59,7 +59,7 @@ function ParkInfo({ parkCode, addVisited, visited }) {
                 name="visited"
                 onChange={(date) => setVisitDate(date)}
               />
-              <button onClick={() => addVisited(parkCode, visitDate)}>
+              <button className="add-visit-btn" onClick={() => addVisited(parkCode, visitDate)}>
                 Add to Passport
                 <img className="stamp" src={stamp} alt="stamp" />
               </button>
@@ -69,9 +69,9 @@ function ParkInfo({ parkCode, addVisited, visited }) {
         </section>
       );
   } else if (error) {
-    return <h2>{error}</h2>
+    return (<h2 className='error-message'>{error}- sorry try again!</h2>);
   } else {
-    return <h2>Loading...</h2>;
+    return (<h2>Loading...</h2>)
   }
 }
 

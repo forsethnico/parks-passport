@@ -17,20 +17,20 @@ function App() {
 
   const queryParks = (query) => {
     fetchParkQuery(query)
-      .then((parks) => {
+      .then((parkData) => {
         setIsLoaded(true);
-        setParks(parks.data);
+        setParks(parkData.data);
       })
       .catch((error) => {
-        setError(error);
+        setError(error.message);
       });
   };
 
   const addVisited = (parkCode, date) => {
-    if(!Object.keys(visited).includes(parkCode)) {
-    setVisited({ ...visited, [parkCode]: date });
+    if (!Object.keys(visited).includes(parkCode)) {
+      setVisited({ ...visited, [parkCode]: date });
     }
-  }
+  };
 
   return (
     <main className="App">
@@ -42,13 +42,12 @@ function App() {
           <img src={passport} className="passport-link" alt="passport" />
         </NavLink>
       </nav>
-      {!error && (
         <Switch>
           <Route exact path="/">
             <div className="main-page">
               <Form queryParks={queryParks} />
-              {parks.length > 0 && <Results parks={parks} />}
-              {error && <h4>{error}</h4>}
+              {!error && <Results parks={parks} />}
+              {error && <h4 className="error-message">{error}- sorry try again!</h4>}
             </div>
           </Route>
           <Route
@@ -71,7 +70,6 @@ function App() {
           />
           <Route render={() => <Redirect to={{ pathname: "/" }} />} />
         </Switch>
-      )}
     </main>
   );
 }

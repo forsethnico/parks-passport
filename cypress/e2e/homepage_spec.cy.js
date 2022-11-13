@@ -1,33 +1,78 @@
-describe('Parks HomePage', () => {
+describe('HomePage', () => {
+  beforeEach(()=> {
+    cy.visit('http://localhost:3000')
+  });
+
   it('should have a National Parks Passport header', () => {
-    cy.get('.logo').should('have.attr', 'src', "../../assets/header.png")
+    cy.get('.logo').should('be.visible')
   });
 
   it('should have a passport nav link', () => {
-    cy.get('.passport').should('have.attr', 'src', "../../assets/parksPassport.png")
+    cy.get('.passport-link').should('be.visible').click()
     cy.url().should("include", "/passport")
   });
 })
 
-
-
 describe('Search Form', () => {
   beforeEach(()=> {
-    cy.intercept('https://developer.nps.gov/api/v1/parks?q=abraham', {
-      fixture: "search_fixture.json"
+    cy.fixture("search_fixture").then((json)=> {
+      cy.intercept('https://developer.nps.gov/api/v1/parks?q=abraham', json);
     })
-    .visit("http://localhost:3000")
-    .as("parks");
-  });
-  it('should have a ', () => {
-    cy.visit('https://example.cypress.io')
-  })
-
-
-
-
-  it('should show park cards once a search is submitted', () => {
-    
+    cy.visit("http://localhost:3000")
   });
 
+  it('should render a search bar input and submit button', () => {
+    cy.get('form').get('input[type="text"]')
+    cy.get('form').get('.search-btn')
+  });
+
+  it('should have be able to type in a search query and see park cards display once search is submitted', () => {
+    cy.get('form').get('input[type="text"]').type('abraham')
+    cy.get('form').get('input[type="text"]').should("have.value", 'abraham')
+    cy.get('form').get('.search-btn').click()
+    cy.get('.park-image').first().should('have.attr', 'src', "https://www.nps.gov/common/uploads/structured_data/3C861078-1DD8-B71B-0B774A242EF6A706.jpg")
+    cy.get('.park-card').first().contains('h2', 'Abraham Lincoln Birthplace')
+  });
+
+  it('should be able to display an error when the user does not fill in a search query before pressing submit', () => {
+    cy.get('form').get('.search-btn').click()
+    cy.contains('h4', "Enter a search query")
+  });
 })
+
+describe("Home Page Errors", () => {
+  beforeEach(() => {
+    cy.visit("http://localhost:3000");
+    cy.get("form").get('input[type="text"]').type("abraham");
+    cy.get("form").get('input[type="text"]').should("have.value", "abraham");
+    cy.get("form").get(".search-btn").click();
+  });
+
+  it("should display a message to the user when server cannot retrieve search results", () => {
+    cy.intercept(
+      { url: "https://developer.nps.gov/api/v1/parks?q=abraham" },
+      { statusCode: 400 }
+    );
+    cy.get(".error-message").contains("400:Bad Request- sorry try again!");
+  });
+
+  it("should display a message to the user when search results are not found", () => {
+    cy.intercept(
+      { url: "https://developer.nps.gov/api/v1/parks?q=abraham" },
+      { statusCode: 404 }
+    );
+    cy.visit("http://localhost:3000");
+    cy.get(".error-message").contains("404:Not Found- sorry try again!");
+  });
+
+  it("should display a message to the user when the server is down to retrieve search results info", () => {
+    cy.intercept(
+      { url: "https://developer.nps.gov/api/v1/parks?q=abraham" },
+      { statusCode: 500 }
+    );
+    cy.visit("http://localhost:3000");
+    cy.get(".error-message").contains(
+      "500:Internal Server Error- sorry try again!"
+    );
+  });
+});

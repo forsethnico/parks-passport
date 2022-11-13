@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import './Results.css'
 import Card from '../Card/Card'
+import './Results.css'
 
 const Results = ({parks}) => {
     const parkCards = parks.map(park => {

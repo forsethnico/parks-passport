@@ -6,8 +6,9 @@ export const fetchSpecificPark = async (parkCode) => {
           "Y0mYVTq8uyp2J5Z6UkwBQPlAbRzYD4W1ZyZ89Sd0",
       }),
     });
+    console.log(response)
     if (!response.ok) {
-      throw Error(response.status + ":" + response.text);
+      throw Error(response.status + ":" + response.statusText);
     }
     return await response.json();
   };
@@ -22,7 +23,7 @@ export const fetchSpecificPark = async (parkCode) => {
       }),
     });
     if (!response.ok) {
-      throw Error(response.status + ":" + response.text);
+      throw Error(response.status + ":" + response.statusText);
     }
     return await response.json();
   };

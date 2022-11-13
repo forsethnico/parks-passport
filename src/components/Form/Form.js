@@ -25,7 +25,7 @@ function Form({queryParks}) {
         <form>
             <input type="text" className="search-query" placeholder="Enter park name or state" name='query' value={query} onChange={event => setQuery(event.target.value)}/>
             <button className ="search-btn" onClick={event => submitSearch(event)}>Search</button>
-            {error && <h4>{error}</h4>}
+            {error && <h4 className="error-message">{error}</h4>}
         </form>
     )
 }
