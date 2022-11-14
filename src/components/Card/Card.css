@@ -9,11 +9,38 @@
     border-radius: 6px;    
 }
 
+a {
+    text-decoration: none !important;
+    color: black;
+}
+
+.park-name {
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+}
+
 .park-image {
     width: 15rem;
     height: 10rem;
     border-radius: 6px 6px 0px 0px;
 }
-/* 
-.park-name {
-}  */
+
+@media screen and (max-width: 500px) {
+    .park-image {
+        width: 100%;
+    }
+    .park-card {
+       width: 10rem; 
+   }
+}
+
+@media screen and (min-width: 500px) and (max-width: 900px) {
+    .park-image {
+        width: 100%;
+    }
+    .park-card {
+       width: 15rem; 
+   }
+}
+
+

@@ -1,5 +1,5 @@
 .filtered-parks-container {
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,3 +16,26 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+@media screen and (max-width: 500px) {
+    .park-cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .park-cards {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+}
+
