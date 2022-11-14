@@ -13,12 +13,10 @@ function App() {
   const [error, setError] = useState(null);
   const [parks, setParks] = useState([]);
   const [visited, setVisited] = useState({});
-  const [isLoaded, setIsLoaded] = useState(false);
 
   const queryParks = (query) => {
     fetchParkQuery(query)
       .then((parkData) => {
-        setIsLoaded(true);
         setParks(parkData.data);
       })
       .catch((error) => {

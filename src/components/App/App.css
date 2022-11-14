@@ -1,17 +1,15 @@
-html, body {
-  height: 100%;
-}
 
 .App {
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
-  height: 100%;
-  font-family: 'Roboto', cursive;
-  background-image: url("../../assets/forest-background.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../../public/forest-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  font-family: 'Roboto', cursive;
 }
 
 nav {
@@ -30,4 +28,3 @@ nav {
   margin-right: 1rem;
   width: 20%;
 }
-

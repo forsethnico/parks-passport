@@ -23,6 +23,8 @@
 .individual-park-name {
     font-family: 'Amatic SC', cursive;
     font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .individual-park-image {

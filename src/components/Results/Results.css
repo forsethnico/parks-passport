@@ -1,10 +1,10 @@
 .filtered-parks-container {
-    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
+    height: 100%;
 }
 
 .park-cards {
