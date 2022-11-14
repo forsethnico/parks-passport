@@ -25,12 +25,12 @@ const Stamp = ({ date, parkCode }) => {
     return (
       <Link to={`/parks/${parkCode}`}>
         <section className="passport-stamp">
-          <img
-            src={parkInfo.images[0].url}
-            alt="park scenery"
-            className="park-stamp-image"
-          />
-          <img src={postStamp} alt="stamp border" className="overlay" />
+            <img
+              src={parkInfo.images[0].url}
+              alt="park scenery"
+              className="park-stamp-image"
+            />
+            <img src={postStamp} alt="stamp border" className="overlay" />
           <div className="stamp-info">
             <h4 className="stamp-title">{parkInfo.name}</h4>
             <h4 className="stamp-date">{date}</h4>

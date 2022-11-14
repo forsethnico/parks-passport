@@ -53,17 +53,19 @@ function ParkInfo({ parkCode, addVisited, visited }) {
             {isVisited &&
               <section className="visited">
                 <img src={approved} alt="check mark" className="approval-check-image"/>
-                <h4>Passport stamped!</h4>
+                <h4 className = "been-stamped">Passport stamped!</h4>
               </section>
             } 
             {!isVisited &&
             <section className="add-visited">
-              <label htmlFor="visited">Date Visited:</label>
-              <DatePicker
-                selected={visitDate}
-                name="visited"
-                onChange={(date) => setVisitDate(date)}
-              />
+              <div className='date-picker'>
+                <label htmlFor="visited">Date Visited:</label>
+                <DatePicker
+                  selected={visitDate}
+                  name="visited"
+                  onChange={(date) => setVisitDate(date)}
+                />
+              </div>
               <button className="add-visit-btn" onClick={() => addVisited(parkCode, visitDate)}>
                 Add to Passport
                 <img className="stamp" src={stamp} alt="stamp" />

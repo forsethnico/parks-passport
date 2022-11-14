@@ -1,3 +1,8 @@
+/* .stamp-card {
+    display: flex;
+    justify-content: center;
+} */
+
 .passport-stamp {
     position: relative;
     top: 0;
@@ -29,12 +34,17 @@
 
 .stamp-info {
     position: relative;
-    width: 10rem;
+    width: 9rem;
     top: 168px;
+    background-color: #A4AFAE;
+    color: black;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 6px;
 } 
 
 .stamp-title {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin: 0;
 }
 
@@ -42,5 +52,6 @@
     font-size: 0.7rem;
     margin: 0;
 }
+
 
 
