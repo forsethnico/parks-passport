@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { fetchParkQuery } from "../../utilities/apiCalls";
-import "./App.css";
 import { NavLink, Route, Switch, Redirect } from "react-router-dom";
 import Form from "../Form/Form";
 import Results from "../Results/Results";
@@ -8,6 +7,7 @@ import ParkInfo from "../ParkInfo/ParkInfo";
 import Passport from "../Passport/Passport";
 import logo from "../../assets/header.png";
 import passport from "../../assets/parksPassport.png";
+import "./App.css";
 
 function App() {
   const [error, setError] = useState(null);

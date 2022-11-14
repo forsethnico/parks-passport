@@ -16,7 +16,6 @@ function ParkInfo({ parkCode, addVisited, visited }) {
   useEffect(() => {
     fetchSpecificPark(parkCode)
     .then(response => {
-      console.log(response)
       if (response.data.length > 0) {
         setParkInfo(response.data[0])
         setLoaded(true)

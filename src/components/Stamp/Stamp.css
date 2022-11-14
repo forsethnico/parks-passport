@@ -1,8 +1,3 @@
-.stamp-card {
-    display: flex;
-    justify-content: center;
-}
-
 .passport-stamp {
     position: relative;
     top: 0;
@@ -34,8 +29,7 @@
 
 .stamp-info {
     position: relative;
-    top: 7px;
-    left: 7px;
+    text-align: center;
     width: 9rem;
     top: 168px;
     background-color: #A4AFAE;
@@ -43,6 +37,7 @@
     padding: 0.5rem;
     font-size: 1rem;
     border-radius: 6px;
+    font-family: 'Roboto', cursive;
 } 
 
 .stamp-title {
@@ -55,17 +50,6 @@
     margin: 0;
 }
 
-@media screen and (max-width: 500px) {
-    .stamp-cards {
-        width: 70%;
-    }
-}
-
-@media screen and (min-width: 500px) and (max-width: 900px) {
-    .passport-stamp {
-        width: 100%;
-    }
-}
 
 
 

@@ -1,7 +1,8 @@
 .passport-stamp-container {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .stamp-cards {
@@ -11,4 +12,28 @@
     padding: 2rem;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 500px) {
+    .stamp-cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .stamp-cards {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
 }
