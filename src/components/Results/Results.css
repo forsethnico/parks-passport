@@ -27,7 +27,7 @@
     }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 500px) and (max-width: 900px) {
     .park-cards {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1.5rem;

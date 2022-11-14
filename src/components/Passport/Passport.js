@@ -17,7 +17,8 @@ function Passport({ visited }) {
   });
   return (<section className="passport-stamp-container">
     <div className ="stamp-cards">
-      {parkStamps}
+      {visitedParkCodes.length > 0 && parkStamps}
+      {visitedParkCodes.length === 0 && <h2>Collection is empty. Go visit some parks!</h2>}
     </div>
     </section>
 )}

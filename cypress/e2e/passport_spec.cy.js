@@ -18,6 +18,12 @@ describe('Passport Page', () => {
     cy.url().should("include", "/passport");
   });
 
+  it('should display a message to user when they have no passport stamps', () => {
+    cy.get(".passport-link").click();
+    cy.url().should("include", "/passport");
+    cy.contains('h2', 'Collection is empty. Go visit some parks!')
+  });
+
   it("should be able to see park image, name, and date added to user passport as a stamp", () => {
     cy.get('form').get('input[type="text"]').type('abraham')
     cy.get('form').get('input[type="text"]').should("have.value", 'abraham')
