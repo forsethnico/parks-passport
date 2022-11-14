@@ -16,6 +16,7 @@ National Park Tracker is a multi page React app designed to keep track of which 
 ## Links
 - [Project spec](https://frontend.turing.edu/projects/module-3/showcase.html)
 - [Project Board](https://github.com/users/forsethnico/projects/5)
+- [Parks API](https://www.nps.gov/subjects/developer/api-documentation.htm#/parks/getPark)
 - [WireFrame](https://www.figma.com/file/lhYQSrR9maGm93H9qOGR26/Untitled?node-id=7%3A6)
 - [Deployed Project](https://parks-passport.vercel.app/)
 
