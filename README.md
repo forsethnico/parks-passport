@@ -27,15 +27,10 @@ National Park Tracker is an app designed to keep track of which national parks a
 ## Features
 When the national park traveler visits the homepage of the app, the user must enter a search query for either national park or state, or other keyword of interest to them. Search results appear as park cards with photos and name of park. 
 
-![National Parks_Homepage]
-
 A user can click on the park to be taken to an info page. They can then select the date they visited and click "Add to Passport" to stamp their passport. 
-
-![Park Info Page]
-
 The title 'National Park Tracker' is used as a link back to the homepage and the user is able to click on the Passport book to go to the 'Passport' page where they can view their collected stamps with name and date visited.
 
-![Passport Page]
+![national-park](https://user-images.githubusercontent.com/18154724/201603248-abfbb3ab-569c-4dce-9ae6-24e3d320fc5f.gif)
 
 ## Setup
 1. Fork this repo - on the top right corner of this page, click the **Fork** button. 
@@ -54,3 +49,4 @@ This project used TypeScript, React, React Router, CSS. Cypress Testing was also
 
 ## Contributors
 This solo project was built by [Nicole Forseth](https://github.com/forsethnico) at Turing School of Software and Design. 
+
