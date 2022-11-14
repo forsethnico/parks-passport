@@ -9,7 +9,7 @@
     margin-bottom: 11rem;
 }
 
-.park-stamp-image {
+.park-stamp-image, .park-stamp-error {
     width: 9rem;
     height: 9rem;
     position: absolute;

@@ -63,7 +63,50 @@ describe('Passport Page', () => {
     cy.get('.individual-park-name').contains('Antietam National Battlefield')
   });
 
-  it('should show an x image to the user if the stamp info was not found', () => {
-    
+  it('should show an x image and message to the user if the server is down', () => {
+    cy.get('form').get('input[type="text"]').type('abraham')
+    cy.get('form').get('input[type="text"]').should("have.value", 'abraham')
+    cy.get('form').get('.search-btn').click()
+    cy.get(".park-name").contains(
+      "h2",
+      "Abraham Lincoln Birthplace"
+    ).click()
+    cy.get('input[type="text"]').clear();
+    cy.get('input[type="text"]').type("11/13/2022");
+    cy.get('input[type="text"]').should("have.value", "11/13/2022");
+    cy.get(".add-visit-btn").click()
+    cy.intercept(
+      { url: "https://developer.nps.gov/api/v1/parks?parkCode=abli" },
+      { statusCode: 500 }
+    );
+    cy.get('.passport-link').click()
+    cy.url().should('include', '/passport')
+    cy.get(".park-stamp-error").should('be.visible')
+    cy.get('.stamp-title').contains('Error')
+    cy.get('.stamp-date').contains('Try again')
   })
-})
+
+  it('should show an x image and message to the user if the park info is not found', () => {
+    cy.get('form').get('input[type="text"]').type('abraham')
+    cy.get('form').get('input[type="text"]').should("have.value", 'abraham')
+    cy.get('form').get('.search-btn').click()
+    cy.get(".park-name").contains(
+      "h2",
+      "Abraham Lincoln Birthplace"
+    ).click()
+    cy.get('input[type="text"]').clear();
+    cy.get('input[type="text"]').type("11/13/2022");
+    cy.get('input[type="text"]').should("have.value", "11/13/2022");
+    cy.get(".add-visit-btn").click()
+    cy.intercept(
+      { url: "https://developer.nps.gov/api/v1/parks?parkCode=abli" },
+      { statusCode: 404 }
+    );
+    cy.get('.passport-link').click()
+    cy.url().should('include', '/passport')
+    cy.get(".park-stamp-error").should('be.visible')
+    cy.get('.stamp-title').contains('Error')
+    cy.get('.stamp-date').contains('Try again')
+  })
+
+});

@@ -42,7 +42,7 @@ const Stamp = ({ date, parkCode }) => {
     return (
       <Link to={`/parks/${parkCode}`}>
         <section className="passport-stamp">
-          <img src={giantX} alt="error message" className="park-stamp-image" />
+          <img src={giantX} alt="error message" className="park-stamp-error" />
           <img src={postStamp} alt="stamp border" className="overlay" />
           <div className="stamp-info">
             <h4 className="stamp-title">Error</h4>
