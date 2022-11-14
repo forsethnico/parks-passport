@@ -11,7 +11,7 @@
 - [Contributors](#contributors)
 
 ## Introduction
-National Park Tracker is an app designed to keep track of which national parks a user has visited by adding the date they visited and a stamp to their parks passport. I have a life goal to visit every national park and so far I am at 35 parks visited! This app will help me keep them all straight! Happy travels!
+National Park Tracker is a multi page React app designed to keep track of which national parks a user has visited by adding the date they visited and a stamp to their parks passport. I have a life goal to visit every national park and so far I am at 30 parks visited! This app will help me keep them all straight. Happy travels!
 
 ## Links
 - [Project spec](https://frontend.turing.edu/projects/module-3/showcase.html)
@@ -20,8 +20,8 @@ National Park Tracker is an app designed to keep track of which national parks a
 - [Deployed Project](https://parks-passport.vercel.app/)
 
 ## Learning Goals 
-- Find an API of our choice and create a multi page React app to showcase mastery of React, Router, asynchronous JavaScript, and end to end testing with Cypress.
-- Create an app that is fully mobile responsive.
+- Find an API of my choice and create a multi page React app for a single user to showcase mastery of React, Router, asynchronous JavaScript, and end to end testing with Cypress.
+- Create an app that is fully mobile responsive and works on desktop/tablet devices as well.
 - Have fun and create something I'm passionate about! I love going to national parks. 
 
 ## Features
@@ -45,8 +45,8 @@ The title 'National Park Tracker' is used as a link back to the homepage and the
 - Add additional images/styling for "loading" and other error handling.
 
 ## Technologies
-This project used TypeScript, React, React Router, CSS. Cypress Testing was also used. Additional technologies learned specifically for this project included media queries for mobile responsivenss and making network requests to fetch information from an API of our choosing. 
+This project used JavaScript, React, React Router, CSS. Cypress E2E testing was also used. Additional technologies learned specifically for this project included media queries for mobile responsiveness and making network requests to fetch information from an API of our choosing. 
 
 ## Contributors
-This solo project was built by [Nicole Forseth](https://github.com/forsethnico) at Turing School of Software and Design. 
+This solo project was built in 4 days by [Nicole Forseth](https://github.com/forsethnico) at Turing School of Software and Design. 
 
