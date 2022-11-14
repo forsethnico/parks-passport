@@ -62,6 +62,7 @@ function ParkInfo({ parkCode, addVisited, visited }) {
                 <DatePicker
                   selected={visitDate}
                   name="visited"
+                  maxDate = {Date.now()}
                   onChange={(date) => setVisitDate(date)}
                 />
               </div>
